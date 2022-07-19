@@ -3,7 +3,8 @@ name: Actions workflow
 on:
   schedule:
     - cron: "* * * * *"
-  pull_request: [opened, reopened, closed]
+  pull_request:
+    types: [opened, reopened, closed]
 
 jobs:
   run-github-actions:
