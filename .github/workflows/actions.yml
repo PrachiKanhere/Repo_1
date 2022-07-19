@@ -2,7 +2,8 @@ name: Actions workflow
 
 on:
   schedule:
-    - cron: "0/2 * * * *"
+    - cron: "* * * * *"
+  pull_request:
 
 jobs:
   run-github-actions:
