@@ -1,8 +1,6 @@
 name: shell commands develop
 
-on: #[push]
-  schedule:
-    - cron: "* * * * *"
+on:
   pull_request:
     types: [opened, closed]
 
